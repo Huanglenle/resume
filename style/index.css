@@ -1,0 +1,123 @@
+b{
+	font-weight: 800;
+}
+li{
+	list-style:none;
+}
+#resume{
+	margin: 0 auto;
+	width: 70%;	
+}
+#personImg{
+	height: 115px;
+	position: relative;
+}
+#personImg p{
+	border-top: 8px solid #fe6b40;
+	color: #fe6b40;
+	width: 100px;
+	text-align: center;
+}
+#personPhoto{
+	border-radius: 100%;
+	overflow: hidden;
+	position: absolute;
+	top:45px;
+	left: 44%;
+	width: 125px;
+	height: 125px;
+}
+#personImg img{
+	width: 100%;
+}
+#pm_message{
+	color: #fff;
+	float: left;
+	background-color: #fe6b40;
+	padding-top: 82px;
+	/*padding-bottom: 25px;*/
+	width: 100%;
+}
+#pm_message .pm_message{
+	float: left;
+	padding-left: 58px;
+}
+#pm_message li{
+	padding: 10px 20px;
+}
+#pm_message .pm_message:nth-child(2){
+	margin-right: -6%;
+}
+em{
+	display:inline-block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color:#fe6b40;
+}
+#pm_message .pm_message em{
+	border-width: 7px;
+	border-left-color: #fff ;
+}
+#personMessage .footTriangle{
+	float: left;
+	width: 100%;
+}
+#pm_message .footTriangle em{
+	border-width: 20px;
+	border-bottom-color: #fff ;
+	margin:0 48%;
+}
+.triangleBox{
+	font-size: 0;
+}
+
+/*==============personMessage is over=============*/
+#studyMessage{
+    border:2px solid #fe6b40;
+	float: left;
+	margin-top: 65px;
+	position: relative;
+}
+#studyMessage_item {
+	position: absolute;
+	left: 205px;
+	top:-45px;
+}
+#studyMessage_item .sm_item{
+	background-color: #fe6b40;
+	border-radius: 50px;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	font-size: 20px;
+	line-height: 80px;
+	margin:0 50px;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+}
+#studyMessage_item .item_selected {
+	background-color: #fd4a16;
+}
+#studyMessage div{
+	padding:0 70px;
+	width: 804px;
+	height: 176px;
+	margin: 50px auto;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#platformBox, #toolBox{
+	display: none;
+}
+#studyMessage img{
+	margin:20px;
+	width: 104px;
+}
+#studyMessage p{
+	margin-left: -120px;
+}
+
+
+

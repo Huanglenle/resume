@@ -25,11 +25,9 @@ window.onload = function(){
 	    }
 	    return index;
 	}
-	console.log(index);
+	// console.log(index);
 //标签切换
 	tabItem(sm_list,sm_divs);
-
-
 	function pointerBox(fatherBox,pointers){
 	    fatherBox.onmouseover = function(){
 	    	for(var i= 0; i < pointers.length; i++){

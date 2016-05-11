@@ -1,6 +1,9 @@
 b{
 	font-weight: 800;
 }
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 li{
 	list-style:none;
 }
@@ -40,7 +43,7 @@ li{
 }
 #pm_message .pm_message{
 	float: left;
-	padding-left: 58px;
+	padding-left: 51px;
 }
 #pm_message li{
 	padding: 10px 20px;

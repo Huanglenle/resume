@@ -66,9 +66,9 @@ em{
 #pm_message .footTriangle em{
 	border-width: 20px;
 	border-bottom-color: #fff ;
-	margin:0 48%;
 }
 .triangleBox{
+	text-align: center;	
 	font-size: 0;
 }
 
@@ -77,6 +77,8 @@ em{
     border:2px solid #fe6b40;
 	float: left;
 	margin-top: 65px;
+	margin-bottom: 20px;
+	width: 940px;
 	position: relative;
 }
 #studyMessage_item {
@@ -100,7 +102,12 @@ em{
 #studyMessage_item .item_selected {
 	background-color: #fd4a16;
 }
-#studyMessage div{
+#stu_contents{
+	width: 2832px;
+	height: 176px;
+}
+#studyMessage .stu_content{
+	float: left;
 	padding:0 70px;
 	width: 804px;
 	height: 176px;
@@ -115,9 +122,74 @@ em{
 	margin:20px;
 	width: 104px;
 }
-#studyMessage p{
-	margin-left: -120px;
+#pm_message a{
+	color: #009c9b;
 }
-
-
+#pm_message a:hover{
+	color: #fff;
+}
+#studyMessage .pointer{
+	background-color: #fe6b40;
+	color: #fff;
+	display: none;
+	position: absolute;
+	font-size: 30px;
+	font-weight: 800;
+	top:100px;
+	padding: 20px 5px;
+	text-align: center;
+	width: 25px;
+	height: 10px;
+	line-height: 10px;
+}
+#studyMessage .pointer:hover{
+	background-color: #fd4a16;
+}
+#studyMessage_go{
+	right:0px;
+}
+#show{
+	clear: both;
+	color: #159f85;
+	border-top: 10px solid #1bbc9b;
+	width: 944px;
+}
+#show_select{
+	font-size: 34px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-top:10px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+#show em{
+	border-width: 18px;
+	border-color: #1bbc9b #fff #fff #fff;
+}
+#jinengBox li{
+	width: 100%;
+	height: 40px;
+}
+#jinengBox li div{
+	float: left;
+}
+#jinengBox div {
+	border-radius: 5px;
+	padding:5px 10px;
+	height: 15px;
+}
+#jinengBox .num{
+	background-color: #1bbc9b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	margin-left: 120px;
+	margin-right:20px; 
+	width: 30px;
+}
+#jinengBox .word{
+	border:1px dashed #1bbc9b;
+	width: 600px;
+}
 

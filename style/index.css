@@ -18,6 +18,7 @@ li{
 #personImg p{
 	border-top: 8px solid #fe6b40;
 	color: #fe6b40;
+	padding-top: 5px;
 	width: 100px;
 	text-align: center;
 }
@@ -43,7 +44,7 @@ li{
 }
 #pm_message .pm_message{
 	float: left;
-	padding-left: 51px;
+	padding-left: 80px;
 }
 #pm_message li{
 	padding: 10px 20px;
@@ -125,8 +126,8 @@ em{
 	margin:20px;
 	width: 104px;
 }
-#pm_message a{
-	color: #009c9b;
+a{
+	font-weight: 800;
 }
 #pm_message a:hover{
 	color: #fff;
@@ -134,6 +135,7 @@ em{
 #studyMessage .pointer{
 	background-color: #fe6b40;
 	color: #fff;
+	cursor: pointer;
 	display: none;
 	position: absolute;
 	font-size: 30px;
@@ -151,13 +153,16 @@ em{
 #studyMessage_go{
 	right:0px;
 }
-#show{
+
+/*==============personaly=================*/
+#personaly{
 	clear: both;
 	color: #159f85;
 	border-top: 10px solid #1bbc9b;
+	padding-bottom: 55px;
 	width: 944px;
 }
-#show_select{
+.boxHead{
 	font-size: 34px;
 	text-align: center;
 	height: 30px;
@@ -166,7 +171,7 @@ em{
 	margin-bottom: 30px;
 	width: 100%;
 }
-#show em{
+#personaly em{
 	border-width: 18px;
 	border-color: #1bbc9b #fff #fff #fff;
 }
@@ -196,3 +201,90 @@ em{
 	width: 600px;
 }
 
+/*===================show========================*/
+#show_head{
+	background-color: #1bbc9b;
+	color: #fff;
+	height: 100px;
+}
+#show_head .triangleBox{
+	height: 20px;
+}
+#show_head em{
+	border-width: 18px;
+    border-color: #fff #1bbc9b #1bbc9b #1bbc9b;
+}
+#show .boxHead p{
+	font-size: 16px;
+}
+#show .diybc{
+	margin-top: 59px;
+}
+.diybc li{
+	background-color: #1bbc9b;
+	border-radius: 50px;
+	color: #fff;
+	float: left;
+	margin:0 54px;
+	height: 80px;
+	width: 80px;
+	margin-top: -40px;
+}
+.diybc ul{
+	border-top: 4px dotted #1bbc9b;
+}
+.diybc em{
+	border-width: 17px;
+	border-color: #fff;
+}
+#showMore em:nth-child(2){
+	margin-left: 15px;
+}
+#lookMore{
+	border-top: 4px dotted #1bbc9b;
+	float: left;
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	margin: 10px 0;
+	width: 100%;
+}
+#lookMore a{
+	background: -webkit-linear-gradient(#fff,#1bbc9b); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#fff,#1bbc9b); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#fff,#1bbc9b); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#fff,#1bbc9b); /* 标准的语法（必须放在最后） */
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+} 
+#lookMore a:hover{
+	color: #551A8B;
+}
+#show_content .show_box{
+	border:2px solid #1bbc9b;
+	float: left;
+	padding:10px;
+	margin: 10px 0; 
+	width: 284px;
+}
+#show_content .show_box:nth-child(2){
+	margin: 10px 10px;
+}
+#show_content .show_box ul{
+	background-color: #1bbc9b;
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 10px;
+}
+#show_content b{
+	margin-right: 10px;
+}
+#show_content img{
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 30px;
+}

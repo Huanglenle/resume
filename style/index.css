@@ -136,28 +136,6 @@ a{
 #pm_message a:hover{
 	color: #fff;
 }
-#studyMessage .pointer{
-	background-color: #fe6b40;
-	color: #fff;
-	cursor: pointer;
-	display: none;
-	position: absolute;
-	font-size: 30px;
-	font-weight: 800;
-	top:100px;
-	padding: 20px 5px;
-	text-align: center;
-	width: 25px;
-	height: 10px;
-	line-height: 10px;
-}
-#studyMessage .pointer:hover{
-	background-color: #fd4a16;
-}
-#studyMessage_go{
-	right:0px;
-}
-
 /*==============personaly=================*/
 #personaly{
 	clear: both;
@@ -289,4 +267,15 @@ a{
 	cursor: pointer;
 	width: 98%;
 	margin-top: 10px;
+}
+
+
+#backTop{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	cursor: pointer;
 }

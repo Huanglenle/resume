@@ -1,9 +1,13 @@
 window.onload = function(){
 
 	var studyMessage = document.getElementById("studyMessage"),
-		sm_divs = studyMessage.getElementsByClassName("stu_content"),
+	    contents = document.getElementById("contents"),
+    	stu_contents = document.getElementById("stu_contents"),
+		sm_divs = stu_contents.getElementsByClassName("stu_content"),
+
 		sm_items = document.getElementById("studyMessage_item"),
 		sm_list = sm_items.getElementsByTagName("li");
+
     var sm_back = document.getElementById("studyMessage_back"),
     	sm_go = document.getElementById("studyMessage_go"),
     	sm_pointers = document.getElementsByClassName("pointer");
@@ -44,7 +48,9 @@ window.onload = function(){
 	pointerBox(studyMessage,sm_pointers);
 
 	sm_back.onclick = function(){
-		console.log("1");
-    	sm_divs[index].style.left = "-944px";
+    	console.log("1");
+		
+    	stu_contents.style.left = parseInt(stu_contents.style.left) - 804 +"px";
+    	console.log(stu_contents.style.width);
 	}
 }

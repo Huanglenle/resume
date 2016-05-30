@@ -1,56 +1,52 @@
-window.onload = function(){
+$(function(){
+	var sm_items  = $(".sm_item");
+	var stu_contents = $(".stu_content");
 
-	var studyMessage = document.getElementById("studyMessage"),
-	    contents = document.getElementById("contents"),
-    	stu_contents = document.getElementById("stu_contents"),
-		sm_divs = stu_contents.getElementsByClassName("stu_content"),
+//焦点轮播
+	sm_items.each(function(index) {
+		var itemNode = $(this);
+		itemNode.mouseover(function() {
+			itemNode.addClass('item_selected').siblings().removeClass('item_selected');
+			var index = itemNode.index();
+			stu_contents.eq(index).fadeIn(300).siblings().fadeOut(300);
+		});
+	});
 
-		sm_items = document.getElementById("studyMessage_item"),
-		sm_list = sm_items.getElementsByTagName("li");
+//自动轮播
+	var  i = 0;
+	var timer = setInterval(autoplay,3000);
 
-    var sm_back = document.getElementById("studyMessage_back"),
-    	sm_go = document.getElementById("studyMessage_go"),
-    	sm_pointers = document.getElementsByClassName("pointer");
+	function autoplay(){
+		i++;
+		if( i == 3){
+			i = 0;
+		};
+		// console.log(i);
+		stu_contents.eq(i).fadeIn(300).siblings().fadeOut(300);
+		sm_items.eq(i).addClass('item_selected').siblings().removeClass('item_selected');
+	};
 
-//标签切换函数封装
-    var index = null;
-	function tabItem(listsTab,divsTab){
-	    for(var i = 0; i < listsTab.length; i++){
-	    	index = i;
-	    	listsTab[i].id = i;
-	    	listsTab[i].onmouseover = function(){
-	    		for(var j = 0; j < listsTab.length; j++){
-	    		    listsTab[j].className = "sm_item";
-	    			divsTab[j].style.display = "none";
-	    		}
-			this.className = "sm_item item_selected";
-	        divsTab[this.id].style.display = "block";
-	    	}
-	    }
-	    return index;
-	}
-	// console.log(index);
-//标签切换
-	tabItem(sm_list,sm_divs);
-	function pointerBox(fatherBox,pointers){
-	    fatherBox.onmouseover = function(){
-	    	for(var i= 0; i < pointers.length; i++){
-	    		pointers[i].style.display = "block";
-	    	}
-	    }
-	    fatherBox.onmouseout = function(){
-	    	for(var i= 0; i < pointers.length; i++){
-	    		pointers[i].style.display = "none";
-			}
-	    }
-	}
+	$("#studyMessage").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(autoplay,3000);
+	});
 
-	pointerBox(studyMessage,sm_pointers);
+//点击轮播
+	var prev = $("#btns .left_btn"),
+		next = $("#btns .right_btn");
 
-	sm_back.onclick = function(){
-    	console.log("1");
-		
-    	stu_contents.style.left = parseInt(stu_contents.style.left) - 804 +"px";
-    	console.log(stu_contents.style.width);
-	}
-}
+	prev.click(function(){
+		i--;
+		if(i == -1){
+			i = 2;
+		};
+		stu_contents.eq(i).fadeIn(300).siblings().fadeOut(300);
+		sm_items.eq(i).addClass('item_selected').siblings().removeClass('item_selected');
+	});
+
+	next.click(function(){
+		autoplay();
+	});
+});
+

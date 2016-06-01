@@ -334,13 +334,13 @@ a{
 	margin-top: 10px;
 }
 
-
 #backTop{
 	position: fixed;
 	bottom: 0;
-	right: 0;
-	width: 20px;
-	height: 20px;
-	background-color: #000;
+	right: 150px;
 	cursor: pointer;
+}
+#backTop img{
+	width: 40spx;
+	height: 40px;
 }
